@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"> -->
+    <link rel="shortcut icon" href="icons/hot-weather.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main-contaner">
+        <img id="main-image" src="https://s7d2.scene7.com/is/image/TWCNews/clouds_from_above?wid=1250&hei=703&$wide-bg$"
+            alt="image">
+        <div id="details">
+            <div id="input-section">
+                <input type="text" name="input" placeholder="City........" id="input">
+                <!-- <button id="search-icon" type="submit" onclick="click()"><i class="bi bi-search"></i></button> -->
+                <button type="submit" id="search-icon"><i class="bi bi-search"></i></button>
+            </div>
+            <div id="temptature-icon-section">
+                <div id="temptature-section">
+                    <div id="date-section">
+                        <div id="date">2</div>&nbsp;
+                        <div id="month">January</div>&nbsp;
+                        <div id="year">2028</div>&nbsp;,
+                        <div id="houers">2</div>&nbsp;
+                        <div>:</div>
+                        <div id="minutes">52</div>&nbsp;
+                        <div id="ampm">GM</div>
+                    </div>
+                    <div id="Max-min-temp">
+                        <div id="max-temp-section">
+                            <p>Day</p>&nbsp;<span
+                                id="max-temp">25</span><span>°</span>&nbsp;&nbsp;<span>.</span>&nbsp;&nbsp;
+                        </div>
+                        <div id="min-temp-secion">
+                            <p>Night</p>&nbsp;<span id="min-temp">20</span><span>°</span>
+                        </div>
+                    </div>
+                    <div id="temp-section">
+                        <span id="tempetature">25</span>
+                        <sup id="celcies">°C</sup>
+                    </div>
+                    <div id="temp-feels">
+                        <p id="feels-text">Feels like</p>&nbsp;
+                        <span id="feels-like">28</span>
+                        <p>°</p>
+                    </div>
+                </div>
+                <div id="icon-section">
+                    <div id="location-cuntry-city">
+                        <!-- <img src="" alt="location icon"> -->
+                        <i class="bi bi-geo-alt-fill"></i>&nbsp;
+                        <div id="country">AB</div>&nbsp;&nbsp;
+                        <div id="city">L</div>
+                    </div>
+                    <img id="main-icon" src="" alt="icon">
+                    <!-- <i id="main-icon" class="bi bi-cloud-drizzle"></i> -->
+                    <div id="temprature-nature">type</div>
+                </div>
+            </div>
+            <div id="othe-detales">
+                <div id="current-wind-details">
+                    <div id="current-details">
+                        <h5 class="names">Current details</h5>
+                        <div class="names">
+                            <p>Humidity</p>
+                            <div class="detales">
+                                <span id="humidity">15</span>
+                                <span>%</span>
+                            </div>
+                        </div>
+                        <div class="names">
+                            <p>pressure</p>
+                            <div class="detales">
+                                <span id="pressure">15</span>
+                                <span>mBar</span>
+                            </div>
+                        </div>
+                        <div class="names">
+                            <p>visibility</p>
+                            <div class="detales">
+                                <span id="visibility">15</span>
+                                <span>km</span>
+                            </div>
+                        </div>
+                        <div class="names">
+                            <p>latitude</p>
+                            <div class="detales">
+                                <span id="latitude">15</span>
+                                <span>°</span>
+                            </div>
+                        </div>
+                        <div class="names">
+                            <p>longitude</p>
+                            <div class="detales">
+                                <span id="longitude">15</span>
+                                <span>°</span>
+                            </div>
+                        </div>
+                        <div class="names">
+                            <p>day&nbsp;length</p>
+                            <div class="detales">
+                                <span id="daylength">15</span>
+                                <span>Hour</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="wind">
+                        <img id="windmill-image"
+                            src="https://letstalkscience.ca/sites/default/files/2020-12/breitenlee-vestas-v-52_wind_turbine_looped.gif"
+                            alt="img">
+                        <h5 class="names">Wind</h5>
+                        <div class="names">
+                            <p>digree</p>
+                            <div class="detales">
+                                <span id="dig">15</span>
+                                <span>°</span>
+                            </div>
+                        </div>
+                        <div class="names">
+                            <p>speed</p>
+                            <div class="detales">
+                                <span id="speed">15</span>
+                                <span style="text-transform: none;">km/h</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="sunset-sunrise">
+                    <div class="sun">
+                        <img class="sun-image" src="icons/sunrise.png" alt="sunrise">
+                        <div class="sunrise">
+                            <p>sunrise</p>&nbsp;
+                            <p id="sunrise">000</p>
+                        </div>
+                    </div>
+                    <div class="sun">
+                        <img class="sun-image" src="icons/sunset.png" alt="sunset">
+                        <div class="sunset">
+                            <p>sunset</p>&nbsp;
+                            <p id="sunset">000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
